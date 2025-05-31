@@ -1,0 +1,63 @@
+{
+    "configurations": [
+        {
+            "name": "rt-thread",
+            "defines": [
+                "RT_USING_LIBC",
+                "RT_USING_NEWLIBC",
+                "_POSIX_C_SOURCE=1",
+                "__RTTHREAD__"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "D:/PortableSoftwareApps/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "compileCommands": [
+                "build/compile_commands.json"
+            ],
+            "includePath": [
+                "applications",
+                "rt-thread\\components\\libc\\compilers\\common\\include",
+                "rt-thread\\components\\libc\\compilers\\newlib",
+                "rt-thread\\components\\drivers\\include",
+                "rt-thread\\components\\drivers\\phy",
+                "rt-thread\\components\\drivers\\sdio\\sdhci\\include",
+                "rt-thread\\components\\drivers\\smp_call",
+                "rt-thread\\components\\drivers\\spi",
+                "rt-thread\\components\\drivers\\spi\\sfud\\inc",
+                "drivers",
+                "rt-thread\\components\\dfs\\dfs_v2\\include",
+                "rt-thread\\components\\dfs\\dfs_v2\\filesystems\\devfs",
+                "rt-thread\\components\\dfs\\dfs_v2\\filesystems\\elmfat",
+                "rt-thread\\components\\dfs\\dfs_v2\\filesystems\\mqueue",
+                "rt-thread\\components\\dfs\\dfs_v2\\filesystems\\romfs",
+                "rt-thread\\components\\dfs\\dfs_v2\\filesystems\\tmpfs",
+                "rt-thread\\components\\finsh",
+                ".",
+                "rt-thread\\include",
+                "rt-thread\\components\\drivers\\ktime",
+                "rt-thread\\components\\drivers\\ktime\\inc",
+                "rt-thread\\components\\legacy",
+                "rt-thread\\components\\legacy\\dfs",
+                "rt-thread\\libcpu\\arm\\common",
+                "rt-thread\\libcpu\\arm\\cortex-a",
+                "rt-thread\\components\\mm",
+                "rt-thread\\components\\libc\\posix\\delay",
+                "rt-thread\\components\\libc\\posix\\io\\aio",
+                "rt-thread\\components\\libc\\posix\\io\\epoll",
+                "rt-thread\\components\\libc\\posix\\io\\eventfd",
+                "rt-thread\\components\\libc\\posix\\io\\poll",
+                "rt-thread\\components\\libc\\posix\\io\\stdio",
+                "rt-thread\\components\\libc\\posix\\io\\termios",
+                "rt-thread\\components\\libc\\posix\\ipc",
+                "rt-thread\\components\\utilities\\libadt\\avl",
+                "rt-thread\\components\\utilities\\libadt\\bitmap",
+                "rt-thread\\components\\utilities\\libadt\\hashmap",
+                "rt-thread\\components\\utilities\\libadt\\ref",
+                "rt-thread\\components\\utilities\\libadt\\uthash",
+                "rt-thread\\components\\utilities\\resource"
+            ]
+        }
+    ],
+    "version": 4
+}
