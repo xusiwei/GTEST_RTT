@@ -258,6 +258,8 @@
 
 /* end of Interprocess Communication (IPC) */
 /* end of POSIX (Portable Operating System Interface) layer */
+#define RT_USING_CPLUSPLUS
+#define RT_USING_CPP_EXCEPTIONS
 /* end of C/C++ and POSIX layer */
 
 /* Network */
