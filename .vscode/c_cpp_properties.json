@@ -55,7 +55,8 @@
                 "rt-thread\\components\\utilities\\libadt\\hashmap",
                 "rt-thread\\components\\utilities\\libadt\\ref",
                 "rt-thread\\components\\utilities\\libadt\\uthash",
-                "rt-thread\\components\\utilities\\resource"
+                "rt-thread\\components\\utilities\\resource",
+                "packages/googletest/googletest/include"
             ]
         }
     ],

@@ -259,7 +259,6 @@
 /* end of Interprocess Communication (IPC) */
 /* end of POSIX (Portable Operating System Interface) layer */
 #define RT_USING_CPLUSPLUS
-#define RT_USING_CPP_EXCEPTIONS
 /* end of C/C++ and POSIX layer */
 
 /* Network */
@@ -482,5 +481,11 @@
 #define BSP_USING_UART0
 /* end of Onboard Peripheral Drivers */
 /* end of Hardware Drivers Config */
+
+/* Application Configs */
+
+#define RT_USING_GTEST
+#define RT_USING_GTEST_CASES
+/* end of Application Configs */
 
 #endif

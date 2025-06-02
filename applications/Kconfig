@@ -1,0 +1,15 @@
+menu "Application Configs"
+
+config RT_USING_GTEST
+	bool "Using GTest"
+	default y
+	help "Using GTest framework and test cases"
+
+if RT_USING_GTEST
+	config RT_USING_GTEST_CASES
+		bool "Using GTest cases"
+		default n
+		help "Using GTest cases"
+endif
+
+endmenu

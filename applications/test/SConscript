@@ -1,0 +1,21 @@
+from building import *
+import os
+
+cwd = GetCurrentDir()
+objs = []
+src = Glob('*.c') + Glob('*.cpp')
+CPPPATH = [cwd]
+
+CPPPATH += ['/pacakges/googletest/googletest/include']
+
+for d in os.listdir(cwd):
+    path = os.path.join(cwd, d)
+    sconsfile = os.path.join(path, 'SConscript')
+    if os.path.isfile(sconsfile):
+        objs += SConscript(sconsfile)
+
+
+LOCAL_CCFLAGS = '-std=c++17'
+objs += DefineGroup('test', src, depend = ['RT_USING_GTEST_CASES'], CPPPATH = CPPPATH, LOCAL_CCFLAGS = LOCAL_CCFLAGS)
+
+Return('objs')
